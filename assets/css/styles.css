@@ -1,0 +1,485 @@
+.navbar {
+    background-color: transparent;
+    width: 100%;
+    transition: background-color 0.3s ease; 
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.flag {
+    width: 30px;
+    height: 30px;
+    object-fit: cover;
+    transition: transform 0.2s ease;
+}
+
+.flag:hover {
+    transform: scale(1.2);
+}
+
+.hero-navbar {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 10;
+}
+
+.navbar .navbar-brand:hover {
+    color: #ffffff;
+}
+
+.navbar .navbar-brand:hover img {
+    filter: brightness(100%);
+}
+
+h1, h2, h3 {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+}
+
+.logo-navbar {
+    height: 40px;
+    width: auto;
+}
+
+.navbar .navbar-brand {
+    color: #ffffff;
+    font-weight: bold;
+}
+
+.navbar .nav-link {
+    color: #ffffff;
+    transition: color 0.3s ease;
+}
+
+.navbar .nav-link:hover {
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.hero-section {
+    background-image: url('../img/landscape.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    text-align: center;
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content {
+    margin-top: 80px;
+}
+
+.hero-section::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: -1;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.5rem;
+}
+
+button, .btn {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.sobre-mi {
+    font-family: "Lato", sans-serif ;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.imagen-sobre-mi {
+    border-radius: 50%;
+    vertical-align: middle;
+    width: 170px;
+    height: auto;
+    border: 0;
+    margin: auto;
+    margin-top: 15px;
+}
+
+.descripcion-sobre-mi {
+    font-family: "Lato", sans-serif ;
+    letter-spacing: 1px;
+    margin-top: 20px;
+    text-align: center;
+    font-size: 16px;
+    max-width: 650px;
+    margin: 30px auto;
+    margin-bottom: 100px;
+}
+
+.what-i-do {
+    background-color: rgb(238, 236, 236);
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.what-i-do h2 { 
+    font-size: 2rem;
+    margin-bottom: 50px;
+}
+
+.contenedor-secciones {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.seccion {
+    max-width: 300px;
+    text-align: center;
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    transition: background-color 0.3s ease, transform 0.2s ease, box-shadow 0.3s ease;
+}
+
+.seccion img {
+    width: 80px;
+    height: 80px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.seccion:hover {
+    background-color: #1e90ff;
+    color: white;
+    transform: translateY(-5px);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.seccion:hover h3,
+.seccion:hover p {
+    color: white;
+}
+
+.experiencia {
+    text-align: center;
+    padding: 50px 20px;
+    font-family: "Lato", sans-serif;
+}
+
+.experiencia h2 {
+    font-size: 2rem;
+    margin-bottom: 30px;
+    color: #333;
+}
+
+.tecnologias {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.tecnologia {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 110px;
+}
+
+.tecnologia img {
+    width: 60px;
+    height: 60px;
+    transition: transform 0.3s ease, filter 0.3s ease;
+}
+
+.tecnologia img:hover {
+    transform: scale(1.2);
+}
+
+.tecnologia p {
+    margin-top: 10px;
+    font-weight: bold;
+    color: #444;
+}
+
+.curriculum {
+    background-image: url('../img/cv.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    position: relative;
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+    font-family: "Lato", sans-serif;
+}
+
+.curriculum::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(5px);
+    z-index: 1;
+}
+
+.curriculum h2 {
+    font-size: 2.5rem;
+    margin-bottom: 15px;
+    z-index: 2;
+}
+
+.btn-cv {
+    background-color: transparent;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: 0.3s;
+    z-index: 2;
+}
+
+.btn-cv:hover {
+    background-color: #000000;
+    transform: scale(1.2);
+}
+
+.proyectos {
+    text-align: center;
+    padding: 80px 20px;
+    background: linear-gradient(135deg, #1e3a8a, #cccccc);
+    font-family: "Poppins", sans-serif;
+    color: white;
+}
+
+.proyectos h2 {
+    font-size: 2.8rem;
+    margin-bottom: 40px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+.contenedor-proyectos {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+}
+
+.proyecto {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 15px;
+    overflow: hidden;
+    width: 320px;
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.proyecto:hover {
+    transform: translateY(-8px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.3);
+}
+
+.proyecto img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.proyecto-info {
+    padding: 20px;
+    text-align: center;
+}
+
+.proyecto-info h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.proyecto-info p {
+    font-size: 1rem;
+    color: rgba(255, 255, 255, 0.8);
+    margin-bottom: 15px;
+}
+
+.botones-proyecto {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.btn-proyecto {
+    background: #ffffff;
+    color: #1e3a8a;
+    padding: 10px 18px;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: 0.3s ease;
+    box-shadow: 2px 2px 10px rgba(255, 255, 255, 0.2);
+}
+
+.btn-proyecto:hover {
+    background: #1e3a8a;
+    color: white;
+    transform: scale(1.05);
+}
+
+.footer {
+    background: #111;
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    font-family: "Poppins", sans-serif;
+}
+
+.contenedor-footer {
+    max-width: 1000px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    width: 80px;
+    height: auto;
+}
+
+.footer-nav {
+    display: flex;
+    gap: 20px;
+    margin: 10px 0;
+}
+
+.footer-nav a {
+    color: rgba(255, 255, 255, 0.8);
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.footer-nav a:hover {
+    color: #1e90ff;
+}
+
+.footer-social {
+    display: flex;
+    gap: 15px;
+}
+
+.footer-social img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.footer-social img:hover {
+    transform: scale(1.2);
+}
+
+.footer-text {
+    font-size: 0.9rem;
+    opacity: 0.7;
+}
+
+.contacto {
+    text-align: center;
+    font-family: 'Poppins', sans-serif;
+    padding: 40px;
+}
+
+.contacto h2 {
+    margin-bottom: 15px;
+}
+
+/* Media Queries para móviles */
+@media (max-width: 768px) {
+    .navbar {
+        font-size: 0.9rem;
+    }
+
+    .hero-section {
+        height: 50vh;
+    }
+
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+
+    .hero-content p {
+        font-size: 1.2rem;
+    }
+
+    .seccion {
+        max-width: 200px;
+        padding: 15px;
+    }
+
+    .proyecto {
+        width: 100%;
+    }
+
+    .contenedor-proyectos {
+        flex-direction: column;
+    }
+
+    .tecnologia img {
+        width: 50px;
+        height: 50px;
+    }
+
+    .footer-nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+    .hero-section.opaco::before {
+        background-color: rgb(0, 0, 0);  /* Hace la sección hero más opaca */
+    }
+    
+    .hero-section.opaco h1, 
+    .hero-section.opaco p {
+        color: #000000; /* Cambia el color del texto a negro cuando el menú se activa */
+    }
+    .flag {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+      }
+}

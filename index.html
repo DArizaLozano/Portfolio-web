@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deivy Ariza | Frontend Developer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Montserrat:wght@400;700&family=Poppins:wght@400;700&family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="icon" href="assets/img/Logo.png" type="image/png">
+    <link rel="stylesheet" href="assets/css/styles.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+<body>
+    <header class="hero-section" id="home">
+       
+        <div class="hero-navbar">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container-fluid">
+                    <a class="navbar-brand d-flex align-items-center" href="#home">
+                        <img src="assets/img/Portafolio.png" alt="Logo" class="logo-navbar">
+                        <span class="ms-2" data-translate="Portafolio">Portafolio</span>
+                    </a>                    
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav ms-auto">
+                            <li class="nav-item"><a class="nav-link" href="#home" data-translate="Inicio">Inicio</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#sobre-mi" data-translate="Sobre mí">Sobre mí</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#proyectos" data-translate="Proyectos">Proyectos</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#experiencia" data-translate="Experiencia">Experiencia</a></li>
+                            <li class="nav-item"><a class="nav-link" href="#contacto" data-translate="Contacto">Contacto</a></li>
+                            <li class="nav-item">
+                                <a href="#" id="language-toggle" class="nav-link d-flex align-items-center gap-2">
+                                    <img src="assets/img/eeuu.png" alt="English" id="flag-en" class="flag" style="display: none;">
+                                    <img src="assets/img/espana.png" alt="Español" id="flag-es" class="flag">
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    
+        <!-- Contenedor exclusivo para el texto del Hero -->
+        <div class="hero-content">
+            <h1 data-translate="¡HOLA!, SOY DEIVY ARIZA">¡HOLA!, SOY DEIVY ARIZA</h1>
+            <p data-translate="Frontend Developer | Diseñador Web">Frontend Developer | Diseñador Web</p>
+        </div>
+    </header>
+    
+    <!-- Sobre mí -->
+    <section id="sobre-mi">
+        <div class="sobre-mi">
+            <h2>Sobre mí</h2>
+        </div>
+        <div class="imagen-sobre-mi">
+            <img src="assets/img/Imagen_Sobre_mi.png" alt="Imagen Sobre mí" class="imagen-sobre-mi">
+        </div>
+        <div class="descripcion-sobre-mi">
+            <p>¡Hola! Soy un apasionado del desarrollo frontend en formación, creando interfaces interactivas y optimizadas para ofrecer la mejor experiencia de usuario. Manejo <strong>HTML, CSS, JavaScript y Bootstrap</strong>, siempre con enfoque en buenas prácticas y usabilidad. Me destaco por mi rápida capacidad de aprendizaje, el trabajo en equipo y la aplicación de metodologías ágiles para desarrollar proyectos de manera eficiente. ¡Listo para nuevos desafíos!</p>
+        </div>
+    </section>
+
+    <!-- Lo que hago -->
+    <section class="what-i-do">
+        <h2>LO QUE HAGO</h2>
+        <div class="contenedor-secciones">
+            <div class="seccion">
+                <img src="assets/img/design.png" alt="Diseño">
+                <h3>Diseño</h3>
+                <p>Para mí, el diseño no es solo cómo se ve una interfaz, sino cómo se siente y funciona.</p>
+            </div>
+            <div class="seccion">
+                <img src="assets/img/development.png" alt="Desarrollo">
+                <h3>Desarrollo</h3>
+                <p>Me especializo en el desarrollo frontend con HTML, CSS, JavaScript y Bootstrap.</p>
+            </div>
+            <div class="seccion">
+                <img src="assets/img/teamwork.png" alt="Colaboración">
+                <h3>Colaboración</h3>
+                <p>Trabajo en equipo y aplico metodologías ágiles para el desarrollo eficiente de proyectos.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Experiencia -->
+    <section class="experiencia" id="experiencia">
+        <h2>EXPERIENCIA</h2>
+        <p>He trabajado con diversas tecnologías para el desarrollo web, enfocándome en la creación de interfaces interactivas y optimizadas.</p>
+        <div class="tecnologias">
+            <div class="tecnologia">
+                <img src="assets/img/html.png" alt="HTML">
+                <p>HTML</p>
+            </div>
+            <div class="tecnologia">
+                <img src="assets/img/css.png" alt="CSS">
+                <p>CSS</p>
+            </div>
+            <div class="tecnologia">
+                <img src="assets/img/js.png" alt="JavaScript">
+                <p>JavaScript</p>
+            </div>
+            <div class="tecnologia">
+                <img src="assets/img/bootstrap.png" alt="Bootstrap">
+                <p>Bootstrap</p>
+            </div>
+            <div class="tecnologia">
+                <img src="assets/img/sql.png" alt="SQL">
+                <p>SQL</p>
+            </div>
+            <div class="tecnologia">
+                <img src="assets/img/git.png" alt="Git">
+                <p>Git</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Curriculum -->
+    <section class="curriculum">
+        <h2>Curriculum</h2>
+        <a href="assets/pdf/curriculum.pdf" class="btn-cv" id="cv-button" target="_blank">Ver CV</a>
+    </section>
+
+    <section class="proyectos" id="proyectos">
+        <h2 data-translate="Mis Proyectos">Mis Proyectos</h2>
+        <div class="contenedor-proyectos">
+            <!-- Proyecto 1 -->
+            <div class="proyecto">
+                <img src="assets/img/dashboard.png" alt="Proyecto 1">
+                <div class="proyecto-info">
+                    <h3 data-translate="Sistema de Gestión">Sistema de Gestión</h3>
+                    <p data-translate="Aplicación web con HTML, CSS, JS y Bootstrap para gestión de productos.">
+                        Aplicación web con HTML, CSS, JS y Bootstrap para gestión de productos.
+                    </p>
+                    <div class="botones-proyecto">
+                        <a href="https://darizalozano.github.io/Product-Management-demo/" target="_blank" class="btn-proyecto" data-translate="Ver Demo">Ver Demo</a>
+                        <a href="https://github.com/DArizaLozano/Product-Management" target="_blank" class="btn-proyecto" data-translate="Código">Código</a>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Proyecto 2 -->
+            <div class="proyecto">
+                <img src="assets/img/proyecto2.png" alt="Proyecto 2">
+                <div class="proyecto-info">
+                    <h3 data-translate="App de Tareas">App de Tareas</h3>
+                    <p data-translate="Aplicación con JavaScript y LocalStorage para gestionar tareas.">
+                        Aplicación con JavaScript y LocalStorage para gestionar tareas.
+                    </p>
+                    <div class="botones-proyecto">
+                        <a href="https://darizalozano.github.io/task-manager---demo/#configuracion" target="_blank" class="btn-proyecto" data-translate="Ver Demo">Ver Demo</a>
+                        <a href="https://github.com/DArizaLozano/task-manager---demo" target="_blank" class="btn-proyecto" data-translate="Código">Código</a>
+                    </div>
+                </div>
+            </div>
+    
+        </div>
+    </section>
+    
+
+    <!-- Contacto -->
+    <section id="contacto" class="contacto">
+        <h2>Contacto</h2>
+        <p>Si quieres ponerte en contacto conmigo, aquí están mis redes.</p>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="contenedor-footer">
+            <div class="footer-logo">
+                <img src="assets/img/Logo.png" alt="Logo">
+            </div>
+            
+            <nav class="footer-nav">
+                <a href="#home" data-translate="Inicio">Inicio</a>
+                <a href="#sobre-mi" data-translate="Sobre mí">Sobre mí</a>
+                <a href="#proyectos" data-translate="Proyectos">Proyectos</a>
+                <a href="#contacto" data-translate="Contacto">Contacto</a>
+            </nav>
+    
+            <div class="footer-social">
+                <a href="https://github.com/DArizaLozano" target="_blank">
+                    <img src="assets/img/github_footer.png" alt="GitHub">
+                </a>
+                <a href="https://www.linkedin.com/in/Deivy-Ariza" target="_blank">
+                    <img src="assets/img/linkedin_footer.png" alt="LinkedIn">
+                </a>
+            </div>
+    
+            <p class="footer-text" data-translate="Todos los derechos reservados.">
+                © 2025 Deivy Ariza. Todos los derechos reservados.
+            </p>
+        </div>
+    </footer>
+    
+
+    <!-- Smooth Scroll CSS -->
+    <style>
+        html {
+            scroll-behavior: smooth;
+        }
+    </style>
+
+<script>
+    const translations = {
+        en: {
+            "Ver CV": "View CV",
+            "cv-link": "assets/pdf/Resume_2025.pdf",
+            "Portafolio": "Portfolio",
+            "Inicio": "Home",
+            "Sobre mí": "About Me",
+            "Proyectos": "Projects",
+            "Experiencia": "Experience",
+            "Contacto": "Contact",
+            "¡HOLA!, SOY DEIVY ARIZA": "HI! I'M DEIVY ARIZA",
+            "Frontend Developer | Diseñador Web": "Frontend Developer | Web Designer",
+            "¡Hola! Soy un apasionado del desarrollo frontend en formación, creando interfaces interactivas y optimizadas para ofrecer la mejor experiencia de usuario. Manejo HTML, CSS, JavaScript y Bootstrap, siempre con enfoque en buenas prácticas y usabilidad. Me destaco por mi rápida capacidad de aprendizaje, el trabajo en equipo y la aplicación de metodologías ágiles para desarrollar proyectos de manera eficiente. ¡Listo para nuevos desafíos!": "Hi! I'm a passionate frontend developer in training, creating interactive and optimized interfaces for the best user experience. I work with <strong>HTML, CSS, JavaScript and Bootstrap</strong>, focusing on best practices and usability. I'm known for my fast learning, teamwork, and applying agile methodologies to develop projects efficiently. Ready for new challenges!",
+            "LO QUE HAGO": "WHAT I DO",
+            "Diseño": "Design",
+            "Para mí, el diseño no es solo cómo se ve una interfaz, sino cómo se siente y funciona.": "To me, design is not just how it looks, but how it feels and works.",
+            "Desarrollo": "Development",
+            "Me especializo en el desarrollo frontend con HTML, CSS, JavaScript y Bootstrap.": "I specialize in frontend development with HTML, CSS, JavaScript and Bootstrap.",
+            "Colaboración": "Collaboration",
+            "Trabajo en equipo y aplico metodologías ágiles para el desarrollo eficiente de proyectos.": "I work in teams and apply agile methodologies for efficient development.",
+            "EXPERIENCIA": "EXPERIENCE",
+            "He trabajado con diversas tecnologías para el desarrollo web, enfocándome en la creación de interfaces interactivas y optimizadas.": "I've worked with various technologies focused on building interactive interfaces.",
+            "Curriculum": "Resume",
+            "Mis Proyectos": "My Projects",
+            "Ver Demo": "View Demo",
+            "Código": "Code",
+            "Sistema de Gestión": "Management System",
+            "Aplicación web con HTML, CSS, JS y Bootstrap para gestión de productos.": "Web app using HTML, CSS, JS and Bootstrap for product management.",
+            "App de Tareas": "Task App",
+            "Aplicación con JavaScript y LocalStorage para gestionar tareas.": "App using JavaScript and LocalStorage to manage tasks.",
+            "Buscador de Películas": "Movie Finder",
+            "Consumo de API con Fetch para buscar información de películas.": "API consumption with Fetch to search for movie info.",
+            "Si quieres ponerte en contacto conmigo, aquí están mis redes.": "If you want to reach me, here are my networks.",
+            "Todos los derechos reservados.": "All rights reserved."
+        },
+        es: {
+            "cv-link": "assets/pdf/curriculum.pdf.pdf"
+        }
+    };
+
+    let currentLanguage = 'es';
+
+    function translatePage(lang) {
+        const t = translations[lang];
+        if (!t) return;
+
+        // Traducción usando el texto interno, como ya tenías
+        document.querySelectorAll('.navbar-brand span, h1, h2, h3, p, .btn-cv, .footer-text').forEach(el => {
+            const text = el.textContent.trim();
+            if (t[text]) {
+                el.textContent = t[text];
+            }
+        });
+
+        // Traducción usando data-translate sin romper lo anterior
+        document.querySelectorAll('[data-translate]').forEach(el => {
+            const key = el.getAttribute('data-translate');
+            if (t[key]) {
+                el.innerHTML = t[key];
+            }
+        });
+
+        const cvButton = document.getElementById('cv-button');
+        if (cvButton && t["cv-link"]) {
+            cvButton.href = t["cv-link"];
+            console.log("Nuevo link CV:", t["cv-link"]);
+        }
+    }
+    
+
+    document.getElementById('language-toggle').addEventListener('click', () => {
+        if (currentLanguage === 'es') {
+            currentLanguage = 'en';
+            translatePage('en');
+            document.getElementById('flag-es').style.display = 'none';
+            document.getElementById('flag-en').style.display = 'inline-block';
+        } else {
+            location.reload();
+        }
+    });
+    // Asegúrate de incluir este código al final de tu archivo HTML o en un archivo JS separado.
+document.querySelector('.navbar-toggler').addEventListener('click', function() {
+    const heroSection = document.querySelector('.hero-section');
+    heroSection.classList.toggle('opaco');
+});
+
+</script>
+
+
+
+
+</body>
+</html>
